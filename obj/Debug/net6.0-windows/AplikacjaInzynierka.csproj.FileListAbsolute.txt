@@ -1,0 +1,17 @@
+C:\Users\frane\Source\Repos\inzynierowie\bin\Debug\net6.0-windows\AplikacjaInzynierka.exe
+C:\Users\frane\Source\Repos\inzynierowie\bin\Debug\net6.0-windows\AplikacjaInzynierka.deps.json
+C:\Users\frane\Source\Repos\inzynierowie\bin\Debug\net6.0-windows\AplikacjaInzynierka.runtimeconfig.json
+C:\Users\frane\Source\Repos\inzynierowie\bin\Debug\net6.0-windows\AplikacjaInzynierka.dll
+C:\Users\frane\Source\Repos\inzynierowie\bin\Debug\net6.0-windows\AplikacjaInzynierka.pdb
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.csproj.AssemblyReference.cache
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.Wprowadzenie.FormStartowy.resources
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.csproj.GenerateResource.cache
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.AssemblyInfoInputs.cache
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.AssemblyInfo.cs
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.csproj.CoreCompileInputs.cache
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.dll
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\refint\AplikacjaInzynierka.dll
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.pdb
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.genruntimeconfig.cache
+C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\ref\AplikacjaInzynierka.dll
