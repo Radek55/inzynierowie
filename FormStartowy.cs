@@ -14,8 +14,8 @@ namespace AplikacjaInzynierka.Wprowadzenie
 {
     public partial class FormStartowy : Form
     {
-        public char[] wynik;
-        public char wynikt;
+        public int[] wynik = new int[11];
+        public int wynik_zadania = 0;
         public int a = -1;
         public FormStartowy()
         {
@@ -41,6 +41,8 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private void WprowadzeniePrzycisk_Click(object sender, EventArgs e)
         {
              a = int.Parse(kod.Text);
+            wynik[0] = a;
+            MessageBox.Show(wynik[0].ToString());
              if (a > 0)
              {
                  WprowadzenieTekst.Text = a.ToString();
@@ -66,6 +68,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             checkBox2.Show();
             nagranie1.Show();
             nagranie2.Show();
+            MessageBox.Show(wynik_zadania.ToString());
             //playSimpleSound("sinus_2s.wav");
         }
         private void odtworz1_Click(object sender, EventArgs e)
@@ -98,8 +101,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             if (checkBox1.Checked == true)
             {
                 checkBox2.Checked = false;
-                wynikt = '0';
-                wynikt = '1';
+                wynik_zadania = 2;
             }
         }
         private void CheckBox2_CheckedChanged(object? sender, EventArgs e)
@@ -107,6 +109,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             if (checkBox2.Checked == true)
             {
                 checkBox1.Checked = false;
+                wynik_zadania = 1;
 
             }
         }
