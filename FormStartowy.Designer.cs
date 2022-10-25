@@ -40,6 +40,9 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.nagranie2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.odtworz1 = new System.Windows.Forms.Button();
+            this.odtworz2 = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // WprowadzenieTekst
@@ -115,7 +118,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(438, 176);
+            this.checkBox1.Location = new System.Drawing.Point(435, 176);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 8;
@@ -130,11 +133,44 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.checkBox2.TabIndex = 9;
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // odtworz1
+            // 
+            this.odtworz1.Location = new System.Drawing.Point(155, 124);
+            this.odtworz1.Name = "odtworz1";
+            this.odtworz1.Size = new System.Drawing.Size(75, 23);
+            this.odtworz1.TabIndex = 10;
+            this.odtworz1.Text = "odtwórz";
+            this.odtworz1.UseVisualStyleBackColor = true;
+            this.odtworz1.Click += new System.EventHandler(this.odtworz1_Click);
+            // 
+            // odtworz2
+            // 
+            this.odtworz2.Location = new System.Drawing.Point(403, 124);
+            this.odtworz2.Name = "odtworz2";
+            this.odtworz2.Size = new System.Drawing.Size(75, 23);
+            this.odtworz2.TabIndex = 11;
+            this.odtworz2.Text = "odtwórz";
+            this.odtworz2.UseVisualStyleBackColor = true;
+            this.odtworz2.Click += new System.EventHandler(this.odtworz2_Click);
+            // 
+            // test
+            // 
+            this.test.AutoSize = true;
+            this.test.Location = new System.Drawing.Point(267, 42);
+            this.test.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(93, 15);
+            this.test.TabIndex = 12;
+            this.test.Text = "Zadanie testowe";
+            // 
             // FormStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 310);
+            this.ClientSize = new System.Drawing.Size(634, 302);
+            this.Controls.Add(this.test);
+            this.Controls.Add(this.odtworz2);
+            this.Controls.Add(this.odtworz1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.nagranie2);
@@ -165,5 +201,8 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private Label nagranie2;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
+        private Button odtworz1;
+        private Button odtworz2;
+        private Label test;
     }
 }

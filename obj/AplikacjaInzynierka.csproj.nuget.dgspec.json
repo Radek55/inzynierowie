@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frane\\Source\\Repos\\inzynierowie\\AplikacjaInzynierka.csproj": {}
+    "C:\\Users\\frane\\source\\repos\\inzynierowie\\AplikacjaInzynierka.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frane\\Source\\Repos\\inzynierowie\\AplikacjaInzynierka.csproj": {
+    "C:\\Users\\frane\\source\\repos\\inzynierowie\\AplikacjaInzynierka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frane\\Source\\Repos\\inzynierowie\\AplikacjaInzynierka.csproj",
+        "projectUniqueName": "C:\\Users\\frane\\source\\repos\\inzynierowie\\AplikacjaInzynierka.csproj",
         "projectName": "AplikacjaInzynierka",
-        "projectPath": "C:\\Users\\frane\\Source\\Repos\\inzynierowie\\AplikacjaInzynierka.csproj",
+        "projectPath": "C:\\Users\\frane\\source\\repos\\inzynierowie\\AplikacjaInzynierka.csproj",
         "packagesPath": "C:\\Users\\frane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frane\\Source\\Repos\\inzynierowie\\obj\\",
+        "outputPath": "C:\\Users\\frane\\source\\repos\\inzynierowie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\frane\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -16,12 +16,21 @@ namespace AplikacjaInzynierka.Wprowadzenie
     {
         public char[] wynik;
         public char wynikt;
+        public int a = -1;
         public FormStartowy()
         {
             InitializeComponent();
             instrukcja.Hide();
             dalej.Hide();
+            odtworz1.Hide();
+            odtworz2.Hide();
+            checkBox1.Hide();
+            checkBox2.Hide();
+            nagranie1.Hide();
+            nagranie2.Hide();
+            test.Hide();
             glosowanie();
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,15 +40,15 @@ namespace AplikacjaInzynierka.Wprowadzenie
 
         private void WprowadzeniePrzycisk_Click(object sender, EventArgs e)
         {
-            string a = kod.Text;
-            /* if (int.Parse(a) > 0)
+             a = int.Parse(kod.Text);
+             if (a > 0)
              {
-                 WprowadzenieTekst.Text = a;
+                 WprowadzenieTekst.Text = a.ToString();
              }
              else
              {
-
-             }*/
+                MessageBox.Show("Wprowadź kod");
+             }
             WprowadzenieTekst.Hide();
             kod.Hide();
             WprowadzeniePrzycisk.Hide();
@@ -50,7 +59,23 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private void dalej_Click(object sender, EventArgs e)
         {
             instrukcja.Hide();
+            test.Show();
+            odtworz1.Show();
+            odtworz2.Show();
+            checkBox1.Show();
+            checkBox2.Show();
+            nagranie1.Show();
+            nagranie2.Show();
+            //playSimpleSound("sinus_2s.wav");
+        }
+        private void odtworz1_Click(object sender, EventArgs e)
+        {
             playSimpleSound("sinus_2s.wav");
+        }
+
+        private void odtworz2_Click(object sender, EventArgs e)
+        {
+            playSimpleSound("sinus_1s.wav");
         }
 
         private void playSimpleSound(string plik)
@@ -85,5 +110,9 @@ namespace AplikacjaInzynierka.Wprowadzenie
 
             }
         }
+
+      
+
+       
     }
 }
