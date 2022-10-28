@@ -20,17 +20,14 @@ namespace AplikacjaInzynierka.Wprowadzenie
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void WprowadzeniePrzycisk_Click(object sender, EventArgs e)
         {
-            ZapisDanych zd = new ZapisDanych();
-            zd.ZapisLokalnie();
-            UserControl control = new UserControl();
-            control.Dock = DockStyle.Fill;
-            this.Controls.Add(control);
+            string input = kod.Text;
+            WprowadzenieTekst.Text = input;
         }
-
+        
     }
 }
