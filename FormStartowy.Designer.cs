@@ -51,6 +51,22 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.badanie2 = new System.Windows.Forms.Label();
             this.dalej5 = new System.Windows.Forms.Button();
             this.badanie3 = new System.Windows.Forms.Label();
+            this.dalej6 = new System.Windows.Forms.Button();
+            this.badanie4 = new System.Windows.Forms.Label();
+            this.dalej7 = new System.Windows.Forms.Button();
+            this.badanie5 = new System.Windows.Forms.Label();
+            this.dalej8 = new System.Windows.Forms.Button();
+            this.badanie6 = new System.Windows.Forms.Label();
+            this.dalej9 = new System.Windows.Forms.Button();
+            this.badanie7 = new System.Windows.Forms.Label();
+            this.dalej10 = new System.Windows.Forms.Button();
+            this.badanie8 = new System.Windows.Forms.Label();
+            this.dalej11 = new System.Windows.Forms.Button();
+            this.badanie9 = new System.Windows.Forms.Label();
+            this.dalej12 = new System.Windows.Forms.Button();
+            this.badanie10 = new System.Windows.Forms.Label();
+            this.zakoncz = new System.Windows.Forms.Button();
+            this.podziekowanie = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // WprowadzenieTekst
@@ -62,7 +78,6 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.WprowadzenieTekst.Size = new System.Drawing.Size(176, 105);
             this.WprowadzenieTekst.TabIndex = 1;
             this.WprowadzenieTekst.Text = "Siema, tutaj tekst wprowadzenia\r\nw\r\nw\r\nw\r\n\r\n\r\nPodaj kod użytkownika";
-            this.WprowadzenieTekst.Click += new System.EventHandler(this.label1_Click);
             // 
             // WprowadzeniePrzycisk
             // 
@@ -180,7 +195,6 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.badanie1.Size = new System.Drawing.Size(58, 15);
             this.badanie1.TabIndex = 13;
             this.badanie1.Text = "Badanie 1";
-            this.badanie1.Click += new System.EventHandler(this.Badanie1_Click_1);
             // 
             // dalej2
             // 
@@ -249,18 +263,202 @@ namespace AplikacjaInzynierka.Wprowadzenie
             // badanie3
             // 
             this.badanie3.AutoSize = true;
-            this.badanie3.Location = new System.Drawing.Point(288, 144);
+            this.badanie3.Location = new System.Drawing.Point(290, 42);
             this.badanie3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.badanie3.Name = "badanie3";
             this.badanie3.Size = new System.Drawing.Size(58, 15);
             this.badanie3.TabIndex = 20;
             this.badanie3.Text = "Badanie 3";
             // 
+            // dalej6
+            // 
+            this.dalej6.Location = new System.Drawing.Point(538, 270);
+            this.dalej6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej6.Name = "dalej6";
+            this.dalej6.Size = new System.Drawing.Size(81, 23);
+            this.dalej6.TabIndex = 21;
+            this.dalej6.Text = "Dalej";
+            this.dalej6.UseVisualStyleBackColor = true;
+            this.dalej6.Click += new System.EventHandler(this.dalej6_Click);
+            // 
+            // badanie4
+            // 
+            this.badanie4.AutoSize = true;
+            this.badanie4.Location = new System.Drawing.Point(290, 42);
+            this.badanie4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie4.Name = "badanie4";
+            this.badanie4.Size = new System.Drawing.Size(58, 15);
+            this.badanie4.TabIndex = 22;
+            this.badanie4.Text = "Badanie 4";
+            // 
+            // dalej7
+            // 
+            this.dalej7.Location = new System.Drawing.Point(538, 270);
+            this.dalej7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej7.Name = "dalej7";
+            this.dalej7.Size = new System.Drawing.Size(81, 23);
+            this.dalej7.TabIndex = 23;
+            this.dalej7.Text = "Dalej";
+            this.dalej7.UseVisualStyleBackColor = true;
+            this.dalej7.Click += new System.EventHandler(this.dalej7_Click);
+            // 
+            // badanie5
+            // 
+            this.badanie5.AutoSize = true;
+            this.badanie5.Location = new System.Drawing.Point(290, 42);
+            this.badanie5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie5.Name = "badanie5";
+            this.badanie5.Size = new System.Drawing.Size(58, 15);
+            this.badanie5.TabIndex = 24;
+            this.badanie5.Text = "Badanie 5";
+            // 
+            // dalej8
+            // 
+            this.dalej8.Location = new System.Drawing.Point(538, 269);
+            this.dalej8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej8.Name = "dalej8";
+            this.dalej8.Size = new System.Drawing.Size(81, 23);
+            this.dalej8.TabIndex = 25;
+            this.dalej8.Text = "Dalej";
+            this.dalej8.UseVisualStyleBackColor = true;
+            this.dalej8.Click += new System.EventHandler(this.dalej8_Click);
+            // 
+            // badanie6
+            // 
+            this.badanie6.AutoSize = true;
+            this.badanie6.Location = new System.Drawing.Point(290, 42);
+            this.badanie6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie6.Name = "badanie6";
+            this.badanie6.Size = new System.Drawing.Size(58, 15);
+            this.badanie6.TabIndex = 26;
+            this.badanie6.Text = "Badanie 6";
+            // 
+            // dalej9
+            // 
+            this.dalej9.Location = new System.Drawing.Point(538, 269);
+            this.dalej9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej9.Name = "dalej9";
+            this.dalej9.Size = new System.Drawing.Size(81, 23);
+            this.dalej9.TabIndex = 27;
+            this.dalej9.Text = "Dalej";
+            this.dalej9.UseVisualStyleBackColor = true;
+            this.dalej9.Click += new System.EventHandler(this.dalej9_Click);
+            // 
+            // badanie7
+            // 
+            this.badanie7.AutoSize = true;
+            this.badanie7.Location = new System.Drawing.Point(290, 42);
+            this.badanie7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie7.Name = "badanie7";
+            this.badanie7.Size = new System.Drawing.Size(58, 15);
+            this.badanie7.TabIndex = 28;
+            this.badanie7.Text = "Badanie 7";
+            // 
+            // dalej10
+            // 
+            this.dalej10.Location = new System.Drawing.Point(538, 270);
+            this.dalej10.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej10.Name = "dalej10";
+            this.dalej10.Size = new System.Drawing.Size(81, 23);
+            this.dalej10.TabIndex = 29;
+            this.dalej10.Text = "Dalej";
+            this.dalej10.UseVisualStyleBackColor = true;
+            this.dalej10.Click += new System.EventHandler(this.dalej10_Click);
+            // 
+            // badanie8
+            // 
+            this.badanie8.AutoSize = true;
+            this.badanie8.Location = new System.Drawing.Point(290, 42);
+            this.badanie8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie8.Name = "badanie8";
+            this.badanie8.Size = new System.Drawing.Size(58, 15);
+            this.badanie8.TabIndex = 30;
+            this.badanie8.Text = "Badanie 8";
+            // 
+            // dalej11
+            // 
+            this.dalej11.Location = new System.Drawing.Point(538, 270);
+            this.dalej11.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej11.Name = "dalej11";
+            this.dalej11.Size = new System.Drawing.Size(81, 23);
+            this.dalej11.TabIndex = 31;
+            this.dalej11.Text = "Dalej";
+            this.dalej11.UseVisualStyleBackColor = true;
+            this.dalej11.Click += new System.EventHandler(this.dalej11_Click);
+            // 
+            // badanie9
+            // 
+            this.badanie9.AutoSize = true;
+            this.badanie9.Location = new System.Drawing.Point(290, 42);
+            this.badanie9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie9.Name = "badanie9";
+            this.badanie9.Size = new System.Drawing.Size(58, 15);
+            this.badanie9.TabIndex = 32;
+            this.badanie9.Text = "Badanie 9";
+            // 
+            // dalej12
+            // 
+            this.dalej12.Location = new System.Drawing.Point(538, 269);
+            this.dalej12.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej12.Name = "dalej12";
+            this.dalej12.Size = new System.Drawing.Size(81, 23);
+            this.dalej12.TabIndex = 33;
+            this.dalej12.Text = "Dalej";
+            this.dalej12.UseVisualStyleBackColor = true;
+            this.dalej12.Click += new System.EventHandler(this.dalej12_Click);
+            // 
+            // badanie10
+            // 
+            this.badanie10.AutoSize = true;
+            this.badanie10.Location = new System.Drawing.Point(290, 42);
+            this.badanie10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie10.Name = "badanie10";
+            this.badanie10.Size = new System.Drawing.Size(64, 15);
+            this.badanie10.TabIndex = 34;
+            this.badanie10.Text = "Badanie 10";
+            // 
+            // zakoncz
+            // 
+            this.zakoncz.Location = new System.Drawing.Point(538, 269);
+            this.zakoncz.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.zakoncz.Name = "zakoncz";
+            this.zakoncz.Size = new System.Drawing.Size(81, 23);
+            this.zakoncz.TabIndex = 35;
+            this.zakoncz.Text = "Zakończ";
+            this.zakoncz.UseVisualStyleBackColor = true;
+            this.zakoncz.Click += new System.EventHandler(this.zakoncz_Click);
+            // 
+            // podziekowanie
+            // 
+            this.podziekowanie.AutoSize = true;
+            this.podziekowanie.Location = new System.Drawing.Point(54, 85);
+            this.podziekowanie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.podziekowanie.Name = "podziekowanie";
+            this.podziekowanie.Size = new System.Drawing.Size(149, 15);
+            this.podziekowanie.TabIndex = 36;
+            this.podziekowanie.Text = "tekst dziękujący za badanie";
+            // 
             // FormStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 302);
+            this.Controls.Add(this.podziekowanie);
+            this.Controls.Add(this.zakoncz);
+            this.Controls.Add(this.badanie10);
+            this.Controls.Add(this.dalej12);
+            this.Controls.Add(this.badanie9);
+            this.Controls.Add(this.dalej11);
+            this.Controls.Add(this.badanie8);
+            this.Controls.Add(this.dalej10);
+            this.Controls.Add(this.badanie7);
+            this.Controls.Add(this.dalej9);
+            this.Controls.Add(this.badanie6);
+            this.Controls.Add(this.dalej8);
+            this.Controls.Add(this.badanie5);
+            this.Controls.Add(this.dalej7);
+            this.Controls.Add(this.badanie4);
+            this.Controls.Add(this.dalej6);
             this.Controls.Add(this.badanie3);
             this.Controls.Add(this.dalej5);
             this.Controls.Add(this.badanie2);
@@ -313,5 +511,21 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private Label badanie2;
         private Button dalej5;
         private Label badanie3;
+        private Button dalej6;
+        private Label badanie4;
+        private Button dalej7;
+        private Label badanie5;
+        private Button dalej8;
+        private Label badanie6;
+        private Button dalej9;
+        private Label badanie7;
+        private Button dalej10;
+        private Label badanie8;
+        private Button dalej11;
+        private Label badanie9;
+        private Button dalej12;
+        private Label badanie10;
+        private Button zakoncz;
+        private Label podziekowanie;
     }
 }

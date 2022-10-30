@@ -22,10 +22,20 @@ namespace AplikacjaInzynierka.Wprowadzenie
             InitializeComponent();
             instrukcja.Hide();
             instrukcja1.Hide();
+            podziekowanie.Hide();
             dalej.Hide();
             dalej2.Hide();
             dalej3.Hide();
             dalej4.Hide();
+            dalej5.Hide();
+            dalej6.Hide();
+            dalej7.Hide();
+            dalej8.Hide();
+            dalej9.Hide();
+            dalej10.Hide();
+            dalej11.Hide();
+            dalej12.Hide();
+            zakoncz.Hide();
             odtworz1.Hide();
             odtworz2.Hide();
             checkBox1.Hide();
@@ -34,21 +44,24 @@ namespace AplikacjaInzynierka.Wprowadzenie
             nagranie2.Hide();
             badanie1.Hide();
             badanie2.Hide();
+            badanie3.Hide();
+            badanie4.Hide();
+            badanie5.Hide();
+            badanie6.Hide();
+            badanie7.Hide();
+            badanie8.Hide();
+            badanie9.Hide();
+            badanie10.Hide();  
             test.Hide();
             glosowanie();
            
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void WprowadzeniePrzycisk_Click(object sender, EventArgs e)
         {
              a = int.Parse(kod.Text);
             wynik[0] = a;
-            MessageBox.Show(wynik[0].ToString());
              if (a > 0)
              {
                  WprowadzenieTekst.Text = a.ToString();
@@ -74,7 +87,9 @@ namespace AplikacjaInzynierka.Wprowadzenie
             checkBox2.Show();
             nagranie1.Show();
             nagranie2.Show();
-            MessageBox.Show(wynik_zadania.ToString());
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik_zadania = 0;
             dalej.Hide();
             dalej2.Show();
             
@@ -82,15 +97,18 @@ namespace AplikacjaInzynierka.Wprowadzenie
 
         private void dalej2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(wynik_zadania.ToString());
             instrukcja1.Show();
             test.Hide();
             odtworz1.Hide();
             odtworz2.Hide();
             checkBox1.Hide();
             checkBox2.Hide();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik_zadania = 0;
             nagranie1.Hide();
             nagranie2.Hide();
+            MessageBox.Show(string.Join(" ", wynik));
             dalej2.Hide();
             dalej3.Show();
         }
@@ -107,7 +125,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             checkBox2.Checked = false;
             nagranie1.Show();
             nagranie2.Show();
-            wynik[1] = wynik_zadania;
+            MessageBox.Show(wynik_zadania.ToString());
             MessageBox.Show(string.Join(" ", wynik));
             dalej3.Hide();
             dalej4.Show();
@@ -119,7 +137,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             badanie2.Show();
             checkBox1.Checked = false;
             checkBox2.Checked = false;
-            wynik[2] = wynik_zadania;
+            wynik[1] = wynik_zadania;
             MessageBox.Show(string.Join(" ", wynik));
             dalej4.Hide();
             dalej5.Show();
@@ -131,7 +149,107 @@ namespace AplikacjaInzynierka.Wprowadzenie
             badanie3.Show();
             checkBox1.Checked = false;
             checkBox2.Checked = false;
+            wynik[2] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej5.Hide();
+            dalej6.Show();
+        }
+
+        private void dalej6_Click(object sender, EventArgs e)
+        {
+            badanie3.Hide();
+            badanie4.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
             wynik[3] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej6.Hide();
+            dalej7.Show();
+        }
+
+        private void dalej7_Click(object sender, EventArgs e)
+        {
+            badanie4.Hide();
+            badanie5.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[4] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej7.Hide();
+            dalej8.Show();
+        }
+
+        private void dalej8_Click(object sender, EventArgs e)
+        {
+            badanie5.Hide();
+            badanie6.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[5] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej8.Hide();
+            dalej9.Show();
+        }
+        private void dalej9_Click(object sender, EventArgs e)
+        {
+            badanie6.Hide();
+            badanie7.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[6] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej9.Hide();
+            dalej10.Show();
+        }
+
+        private void dalej10_Click(object sender, EventArgs e)
+        {
+            badanie7.Hide();
+            badanie8.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[7] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej10.Hide();
+            dalej11.Show();
+        }
+
+        private void dalej11_Click(object sender, EventArgs e)
+        {
+            badanie8.Hide();
+            badanie9.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[8] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej11.Hide();
+            dalej12.Show();
+        }
+
+        private void dalej12_Click(object sender, EventArgs e)
+        {
+            badanie9.Hide();
+            badanie10.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[9] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej12.Hide();
+            zakoncz.Show();
+        }
+
+        private void zakoncz_Click(object sender, EventArgs e)
+        {
+            wynik[10] = wynik_zadania;
+            zakoncz.Hide();
+            badanie10.Hide();
+            odtworz1.Hide();
+            odtworz2.Hide();
+            checkBox1.Hide();
+            checkBox2.Hide();
+            nagranie1.Hide();
+            nagranie2.Hide();
+            podziekowanie.Show();
             MessageBox.Show(string.Join(" ", wynik));
         }
 
@@ -177,10 +295,6 @@ namespace AplikacjaInzynierka.Wprowadzenie
 
             }
         }
-
-        private void Badanie1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
