@@ -21,13 +21,19 @@ namespace AplikacjaInzynierka.Wprowadzenie
         {
             InitializeComponent();
             instrukcja.Hide();
+            instrukcja1.Hide();
             dalej.Hide();
+            dalej2.Hide();
+            dalej3.Hide();
+            dalej4.Hide();
             odtworz1.Hide();
             odtworz2.Hide();
             checkBox1.Hide();
             checkBox2.Hide();
             nagranie1.Hide();
             nagranie2.Hide();
+            badanie1.Hide();
+            badanie2.Hide();
             test.Hide();
             glosowanie();
            
@@ -69,21 +75,79 @@ namespace AplikacjaInzynierka.Wprowadzenie
             nagranie1.Show();
             nagranie2.Show();
             MessageBox.Show(wynik_zadania.ToString());
-            //playSimpleSound("sinus_2s.wav");
+            dalej.Hide();
+            dalej2.Show();
+            
         }
+
+        private void dalej2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(wynik_zadania.ToString());
+            instrukcja1.Show();
+            test.Hide();
+            odtworz1.Hide();
+            odtworz2.Hide();
+            checkBox1.Hide();
+            checkBox2.Hide();
+            nagranie1.Hide();
+            nagranie2.Hide();
+            dalej2.Hide();
+            dalej3.Show();
+        }
+
+        private void dalej3_Click(object sender, EventArgs e)
+        {
+            instrukcja1.Hide();
+            badanie1.Show();
+            odtworz1.Show();
+            odtworz2.Show();
+            checkBox1.Show();
+            checkBox2.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            nagranie1.Show();
+            nagranie2.Show();
+            wynik[1] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej3.Hide();
+            dalej4.Show();
+        }
+
+        private void dalej4_Click(object sender, EventArgs e)
+        {
+            badanie1.Hide();
+            badanie2.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[2] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+            dalej4.Hide();
+            dalej5.Show();
+        }
+
+        private void dalej5_Click(object sender, EventArgs e)
+        {
+            badanie2.Hide();
+            badanie3.Show();
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            wynik[3] = wynik_zadania;
+            MessageBox.Show(string.Join(" ", wynik));
+        }
+
         private void odtworz1_Click(object sender, EventArgs e)
         {
-            playSimpleSound("sinus_2s.wav");
+            playSimpleSound("sinus_1.7s.wav");
         }
 
         private void odtworz2_Click(object sender, EventArgs e)
         {
-            playSimpleSound("sinus_1s.wav");
+            playSimpleSound("sinus_1.5s.wav");
         }
 
         private void playSimpleSound(string plik)
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\frane\Desktop\praca inżynierska 19.10.22\baza nagrań\prosty sinus\"+ plik);
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\baza nagrań 2\(stopień 1) prosty sinus\" + plik);
             simpleSound.Play();
         }
 
@@ -114,8 +178,9 @@ namespace AplikacjaInzynierka.Wprowadzenie
             }
         }
 
-      
+        private void Badanie1_Click_1(object sender, EventArgs e)
+        {
 
-       
+        }
     }
 }

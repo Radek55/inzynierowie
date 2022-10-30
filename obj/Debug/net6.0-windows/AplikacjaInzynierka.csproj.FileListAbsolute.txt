@@ -15,3 +15,11 @@ C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\refint\Aplikac
 C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.pdb
 C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.genruntimeconfig.cache
 C:\Users\frane\Source\Repos\inzynierowie\obj\Debug\net6.0-windows\ref\AplikacjaInzynierka.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\frane\source\repos\inzynierowie\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\frane\source\repos\inzynierowie\obj\Debug\net6.0-windows\AplikacjaInzynierka.csproj.CopyComplete

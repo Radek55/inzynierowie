@@ -43,6 +43,14 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.odtworz1 = new System.Windows.Forms.Button();
             this.odtworz2 = new System.Windows.Forms.Button();
             this.test = new System.Windows.Forms.Label();
+            this.badanie1 = new System.Windows.Forms.Label();
+            this.dalej2 = new System.Windows.Forms.Button();
+            this.instrukcja1 = new System.Windows.Forms.Label();
+            this.dalej3 = new System.Windows.Forms.Button();
+            this.dalej4 = new System.Windows.Forms.Button();
+            this.badanie2 = new System.Windows.Forms.Label();
+            this.dalej5 = new System.Windows.Forms.Button();
+            this.badanie3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // WprowadzenieTekst
@@ -163,11 +171,104 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.test.TabIndex = 12;
             this.test.Text = "Zadanie testowe";
             // 
+            // badanie1
+            // 
+            this.badanie1.AutoSize = true;
+            this.badanie1.Location = new System.Drawing.Point(290, 42);
+            this.badanie1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie1.Name = "badanie1";
+            this.badanie1.Size = new System.Drawing.Size(58, 15);
+            this.badanie1.TabIndex = 13;
+            this.badanie1.Text = "Badanie 1";
+            this.badanie1.Click += new System.EventHandler(this.Badanie1_Click_1);
+            // 
+            // dalej2
+            // 
+            this.dalej2.Location = new System.Drawing.Point(538, 270);
+            this.dalej2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej2.Name = "dalej2";
+            this.dalej2.Size = new System.Drawing.Size(81, 23);
+            this.dalej2.TabIndex = 14;
+            this.dalej2.Text = "Dalej";
+            this.dalej2.UseVisualStyleBackColor = true;
+            this.dalej2.Click += new System.EventHandler(this.dalej2_Click);
+            // 
+            // instrukcja1
+            // 
+            this.instrukcja1.AutoSize = true;
+            this.instrukcja1.Location = new System.Drawing.Point(54, 85);
+            this.instrukcja1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.instrukcja1.Name = "instrukcja1";
+            this.instrukcja1.Size = new System.Drawing.Size(205, 15);
+            this.instrukcja1.TabIndex = 15;
+            this.instrukcja1.Text = "tekst informujący o początku badania";
+            // 
+            // dalej3
+            // 
+            this.dalej3.Location = new System.Drawing.Point(538, 269);
+            this.dalej3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej3.Name = "dalej3";
+            this.dalej3.Size = new System.Drawing.Size(81, 23);
+            this.dalej3.TabIndex = 16;
+            this.dalej3.Text = "Dalej";
+            this.dalej3.UseVisualStyleBackColor = true;
+            this.dalej3.Click += new System.EventHandler(this.dalej3_Click);
+            // 
+            // dalej4
+            // 
+            this.dalej4.Location = new System.Drawing.Point(538, 269);
+            this.dalej4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej4.Name = "dalej4";
+            this.dalej4.Size = new System.Drawing.Size(81, 23);
+            this.dalej4.TabIndex = 17;
+            this.dalej4.Text = "Dalej";
+            this.dalej4.UseVisualStyleBackColor = true;
+            this.dalej4.Click += new System.EventHandler(this.dalej4_Click);
+            // 
+            // badanie2
+            // 
+            this.badanie2.AutoSize = true;
+            this.badanie2.Location = new System.Drawing.Point(290, 42);
+            this.badanie2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie2.Name = "badanie2";
+            this.badanie2.Size = new System.Drawing.Size(58, 15);
+            this.badanie2.TabIndex = 18;
+            this.badanie2.Text = "Badanie 2";
+            // 
+            // dalej5
+            // 
+            this.dalej5.Location = new System.Drawing.Point(538, 270);
+            this.dalej5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.dalej5.Name = "dalej5";
+            this.dalej5.Size = new System.Drawing.Size(81, 23);
+            this.dalej5.TabIndex = 19;
+            this.dalej5.Text = "Dalej";
+            this.dalej5.UseVisualStyleBackColor = true;
+            this.dalej5.Click += new System.EventHandler(this.dalej5_Click);
+            // 
+            // badanie3
+            // 
+            this.badanie3.AutoSize = true;
+            this.badanie3.Location = new System.Drawing.Point(288, 144);
+            this.badanie3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.badanie3.Name = "badanie3";
+            this.badanie3.Size = new System.Drawing.Size(58, 15);
+            this.badanie3.TabIndex = 20;
+            this.badanie3.Text = "Badanie 3";
+            // 
             // FormStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 302);
+            this.Controls.Add(this.badanie3);
+            this.Controls.Add(this.dalej5);
+            this.Controls.Add(this.badanie2);
+            this.Controls.Add(this.dalej4);
+            this.Controls.Add(this.dalej3);
+            this.Controls.Add(this.instrukcja1);
+            this.Controls.Add(this.dalej2);
+            this.Controls.Add(this.badanie1);
             this.Controls.Add(this.test);
             this.Controls.Add(this.odtworz2);
             this.Controls.Add(this.odtworz1);
@@ -204,5 +305,13 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private Button odtworz1;
         private Button odtworz2;
         private Label test;
+        private Label badanie1;
+        private Button dalej2;
+        private Label instrukcja1;
+        private Button dalej3;
+        private Button dalej4;
+        private Label badanie2;
+        private Button dalej5;
+        private Label badanie3;
     }
 }
