@@ -67,6 +67,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.badanie10 = new System.Windows.Forms.Label();
             this.zakoncz = new System.Windows.Forms.Button();
             this.podziekowanie = new System.Windows.Forms.Label();
+            this.OdtworzBadanie = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WprowadzenieTekst
@@ -438,11 +439,22 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.podziekowanie.TabIndex = 36;
             this.podziekowanie.Text = "tekst dziękujący za badanie";
             // 
+            // OdtworzBadanie
+            // 
+            this.OdtworzBadanie.Location = new System.Drawing.Point(403, 124);
+            this.OdtworzBadanie.Name = "OdtworzBadanie";
+            this.OdtworzBadanie.Size = new System.Drawing.Size(75, 23);
+            this.OdtworzBadanie.TabIndex = 37;
+            this.OdtworzBadanie.Text = "odtwórz";
+            this.OdtworzBadanie.UseVisualStyleBackColor = true;
+            this.OdtworzBadanie.Click += new System.EventHandler(this.OdtworzBadanie_Click);
+            // 
             // FormStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 302);
+            this.Controls.Add(this.OdtworzBadanie);
             this.Controls.Add(this.podziekowanie);
             this.Controls.Add(this.zakoncz);
             this.Controls.Add(this.badanie10);
@@ -527,5 +539,6 @@ namespace AplikacjaInzynierka.Wprowadzenie
         private Label badanie10;
         private Button zakoncz;
         private Label podziekowanie;
+        private Button OdtworzBadanie;
     }
 }
