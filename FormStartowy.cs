@@ -16,11 +16,13 @@ namespace AplikacjaInzynierka.Wprowadzenie
 {
     public partial class FormStartowy : Form
     {
+        ZapisDanych zapis = new();
         public int[] wynik = new int[11];
         public int wynik_zadania = 0;
         public int a = -1;
         public int numer;
         public Dictionary<int, string> numery_nagran = new(); // słownik gdzie klucze to numery nagrań a wartości stopień i nagranie na stopniu (1 do 3)
+        public Dictionary<string, int> slownik_koncowy = new();
         public int[] indeksy = new int[11]; // numery wykorzystanych nagrań, indeksy[0] to badanie testowe (nagranie nr 3)
         public int[] nagrania = Enumerable.Range(4,27).ToArray(); // lista numerów nagrań, może się zmienić bo nie wiem czy porównywać zawsze z sinusem tej samej długości, narazie lista bez prostych sinusów
 
@@ -64,7 +66,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             badanie9.Hide();
             badanie10.Hide();  
             test.Hide();
-            glosowanie();
+            Glosowanie();
            
         }
 
@@ -90,7 +92,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej.Show();
         }
 
-        private void dalej_Click(object sender, EventArgs e)
+        private void Dalej_Click(object sender, EventArgs e)
         {
             
             instrukcja.Hide();
@@ -109,7 +111,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             
         }
 
-        private void dalej2_Click(object sender, EventArgs e)
+        private void Dalej2_Click(object sender, EventArgs e)
         {
 
             instrukcja1.Show();
@@ -128,7 +130,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej3.Show();
         }
 
-        private void dalej3_Click(object sender, EventArgs e)
+        private void Dalej3_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[1] = numer;
@@ -149,7 +151,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej4.Show();
         }
 
-        private void dalej4_Click(object sender, EventArgs e)
+        private void Dalej4_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[2] = numer;
@@ -164,7 +166,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej5.Show();
         }
 
-        private void dalej5_Click(object sender, EventArgs e)
+        private void Dalej5_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[3] = numer;
@@ -179,7 +181,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej6.Show();
         }
 
-        private void dalej6_Click(object sender, EventArgs e)
+        private void Dalej6_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[4] = numer;
@@ -194,7 +196,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej7.Show();
         }
 
-        private void dalej7_Click(object sender, EventArgs e)
+        private void Dalej7_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[5] = numer;
@@ -209,7 +211,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej8.Show();
         }
 
-        private void dalej8_Click(object sender, EventArgs e)
+        private void Dalej8_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[6] = numer;
@@ -223,7 +225,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej8.Hide();
             dalej9.Show();
         }
-        private void dalej9_Click(object sender, EventArgs e)
+        private void Dalej9_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[7] = numer;
@@ -238,7 +240,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej10.Show();
         }
 
-        private void dalej10_Click(object sender, EventArgs e)
+        private void Dalej10_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[8] = numer;
@@ -253,7 +255,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej11.Show();
         }
 
-        private void dalej11_Click(object sender, EventArgs e)
+        private void Dalej11_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[9] = numer;
@@ -268,7 +270,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             dalej12.Show();
         }
 
-        private void dalej12_Click(object sender, EventArgs e)
+        private void Dalej12_Click(object sender, EventArgs e)
         {
             numer = NumerNagrania();
             indeksy[10] = numer;
@@ -282,7 +284,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             zakoncz.Show();
         }
 
-        private void zakoncz_Click(object sender, EventArgs e)
+        private void Zakoncz_Click(object sender, EventArgs e)
         {
             wynik[10] = wynik_zadania;
             zakoncz.Hide();
@@ -294,6 +296,8 @@ namespace AplikacjaInzynierka.Wprowadzenie
             nagranie1.Hide();
             nagranie2.Hide();
             podziekowanie.Show();
+            SlownikKoncow();
+            zapis.ZapisLokalnie(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\", wynik[0].ToString(),slownik_koncowy);
         }
         private int NumerNagrania()
         {
@@ -327,34 +331,42 @@ namespace AplikacjaInzynierka.Wprowadzenie
             }
         }
 
-        private void odtworz1_Click(object sender, EventArgs e)
+        private void SlownikKoncow()
         {
-            playSimpleSound("sinus_1.5s.wav");
+            for(int i = 0; i < 11; i++)
+            {
+                slownik_koncowy.Add(numery_nagran[indeksy[i]], wynik[i]);
+            }
         }
 
-        private void odtworz2_Click(object sender, EventArgs e)
+        private void Odtworz1_Click(object sender, EventArgs e)
         {
-            playSimpleSound("sinus_1.7s.wav");
+            PlaySimpleSound("sinus_1.5s.wav");
+        }
+
+        private void Odtworz2_Click(object sender, EventArgs e)
+        {
+            PlaySimpleSound("sinus_1.7s.wav");
         }
 
         private void OdtworzBadanie_Click(object sender, EventArgs e)
         {
-            playSimpleSoundBadanie(numer);
+            PlaySimpleSoundBadanie(numer);
         }
 
-        private void playSimpleSound(string plik)
+        private static void PlaySimpleSound(string plik)
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\baza nagrań 2\(stopień 1) prosty sinus\" + plik);
+            SoundPlayer simpleSound = new(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\baza nagrań 2\(stopień 1) prosty sinus\" + plik);
             simpleSound.Play();
         }
 
-        private void playSimpleSoundBadanie(int numer)
+        private static void PlaySimpleSoundBadanie(int numer)
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\badanie\" + numer.ToString() + ".wav");
+            SoundPlayer simpleSound = new(@"C:\Users\frane\Desktop\praca inżynierska 28.10.22\badanie\" + numer.ToString() + ".wav");
             simpleSound.Play();
         }
 
-        private void glosowanie()
+        private void Glosowanie()
         {
             checkBox1.Checked = false;
             checkBox2.Checked = false;

@@ -117,7 +117,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej.TabIndex = 5;
             this.dalej.Text = "Dalej";
             this.dalej.UseVisualStyleBackColor = true;
-            this.dalej.Click += new System.EventHandler(this.dalej_Click);
+            this.dalej.Click += new System.EventHandler(this.Dalej_Click);
             // 
             // nagranie1
             // 
@@ -165,7 +165,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.odtworz1.TabIndex = 10;
             this.odtworz1.Text = "odtwórz";
             this.odtworz1.UseVisualStyleBackColor = true;
-            this.odtworz1.Click += new System.EventHandler(this.odtworz1_Click);
+            this.odtworz1.Click += new System.EventHandler(this.Odtworz1_Click);
             // 
             // odtworz2
             // 
@@ -175,7 +175,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.odtworz2.TabIndex = 11;
             this.odtworz2.Text = "odtwórz";
             this.odtworz2.UseVisualStyleBackColor = true;
-            this.odtworz2.Click += new System.EventHandler(this.odtworz2_Click);
+            this.odtworz2.Click += new System.EventHandler(this.Odtworz2_Click);
             // 
             // test
             // 
@@ -206,7 +206,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej2.TabIndex = 14;
             this.dalej2.Text = "Dalej";
             this.dalej2.UseVisualStyleBackColor = true;
-            this.dalej2.Click += new System.EventHandler(this.dalej2_Click);
+            this.dalej2.Click += new System.EventHandler(this.Dalej2_Click);
             // 
             // instrukcja1
             // 
@@ -227,7 +227,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej3.TabIndex = 16;
             this.dalej3.Text = "Dalej";
             this.dalej3.UseVisualStyleBackColor = true;
-            this.dalej3.Click += new System.EventHandler(this.dalej3_Click);
+            this.dalej3.Click += new System.EventHandler(this.Dalej3_Click);
             // 
             // dalej4
             // 
@@ -238,7 +238,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej4.TabIndex = 17;
             this.dalej4.Text = "Dalej";
             this.dalej4.UseVisualStyleBackColor = true;
-            this.dalej4.Click += new System.EventHandler(this.dalej4_Click);
+            this.dalej4.Click += new System.EventHandler(this.Dalej4_Click);
             // 
             // badanie2
             // 
@@ -259,7 +259,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej5.TabIndex = 19;
             this.dalej5.Text = "Dalej";
             this.dalej5.UseVisualStyleBackColor = true;
-            this.dalej5.Click += new System.EventHandler(this.dalej5_Click);
+            this.dalej5.Click += new System.EventHandler(this.Dalej5_Click);
             // 
             // badanie3
             // 
@@ -280,7 +280,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej6.TabIndex = 21;
             this.dalej6.Text = "Dalej";
             this.dalej6.UseVisualStyleBackColor = true;
-            this.dalej6.Click += new System.EventHandler(this.dalej6_Click);
+            this.dalej6.Click += new System.EventHandler(this.Dalej6_Click);
             // 
             // badanie4
             // 
@@ -301,7 +301,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej7.TabIndex = 23;
             this.dalej7.Text = "Dalej";
             this.dalej7.UseVisualStyleBackColor = true;
-            this.dalej7.Click += new System.EventHandler(this.dalej7_Click);
+            this.dalej7.Click += new System.EventHandler(this.Dalej7_Click);
             // 
             // badanie5
             // 
@@ -322,7 +322,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej8.TabIndex = 25;
             this.dalej8.Text = "Dalej";
             this.dalej8.UseVisualStyleBackColor = true;
-            this.dalej8.Click += new System.EventHandler(this.dalej8_Click);
+            this.dalej8.Click += new System.EventHandler(this.Dalej8_Click);
             // 
             // badanie6
             // 
@@ -343,7 +343,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej9.TabIndex = 27;
             this.dalej9.Text = "Dalej";
             this.dalej9.UseVisualStyleBackColor = true;
-            this.dalej9.Click += new System.EventHandler(this.dalej9_Click);
+            this.dalej9.Click += new System.EventHandler(this.Dalej9_Click);
             // 
             // badanie7
             // 
@@ -364,7 +364,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej10.TabIndex = 29;
             this.dalej10.Text = "Dalej";
             this.dalej10.UseVisualStyleBackColor = true;
-            this.dalej10.Click += new System.EventHandler(this.dalej10_Click);
+            this.dalej10.Click += new System.EventHandler(this.Dalej10_Click);
             // 
             // badanie8
             // 
@@ -385,7 +385,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej11.TabIndex = 31;
             this.dalej11.Text = "Dalej";
             this.dalej11.UseVisualStyleBackColor = true;
-            this.dalej11.Click += new System.EventHandler(this.dalej11_Click);
+            this.dalej11.Click += new System.EventHandler(this.Dalej11_Click);
             // 
             // badanie9
             // 
@@ -406,7 +406,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.dalej12.TabIndex = 33;
             this.dalej12.Text = "Dalej";
             this.dalej12.UseVisualStyleBackColor = true;
-            this.dalej12.Click += new System.EventHandler(this.dalej12_Click);
+            this.dalej12.Click += new System.EventHandler(this.Dalej12_Click);
             // 
             // badanie10
             // 
@@ -427,7 +427,7 @@ namespace AplikacjaInzynierka.Wprowadzenie
             this.zakoncz.TabIndex = 35;
             this.zakoncz.Text = "Zakończ";
             this.zakoncz.UseVisualStyleBackColor = true;
-            this.zakoncz.Click += new System.EventHandler(this.zakoncz_Click);
+            this.zakoncz.Click += new System.EventHandler(this.Zakoncz_Click);
             // 
             // podziekowanie
             // 
